@@ -35,15 +35,15 @@ passport.deserializeUser(function(id, done) {
 })
 
 passport.use('local-login', new LocalStrategy({
-	usernameField: 'email',
+	usernameField: 'username',
   passwordField: 'password',
   passReqToCallback : true
 }, function(req, id, password, done) {
-	var query = connection.query(`select * from info where ID='${id}' && pw = '${password}'`, function(err,rows) {
+	var query = connection.query(`select * from info where ID='${id}' && PW = '${password}'`, function(err,rows) {
 		if(err) return done(err);
 
 		if(rows.length) {
-			return done(null, {'email' : id, 'password':password,'id' : rows[0].insertId})
+			return done(null, {'username' : id, 'password':password,'id' : rows[0].insertId})
 		} else {
 				return done(null, false, {'message' : 'Incorrect id or password'})
 		}
