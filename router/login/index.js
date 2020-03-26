@@ -16,6 +16,8 @@ var connection = mysql.createConnection({
 })
 connection.connect()
 
+app.use(express.static('public'))
+
 router.get('/', function(req,res) {
 	var msg;
 	var errMsg = req.flash('error')
