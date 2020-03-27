@@ -2,7 +2,7 @@ h1{
     text-align: center;
     font-size: 30px;
 }
-.login-form{
+.join-form{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,13 +11,13 @@ h1{
     width: 500px;
 }
  
-.login{
+.join{
     background: #FFF;
     padding: 80px; 
     border-radius: 15px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
-.login .form-control {
+.join .form-control {
     box-shadow: none;
     padding: 20px;
     border: 1px solid #e8e8e8;
@@ -27,7 +27,7 @@ h1{
     width: 280px;
 }
  
-.login .sendbtn{ 
+.join .sendbtn{ 
     background: #84be63;
     border: none;
     color: #FFF; 
@@ -45,4 +45,8 @@ body{
     background-image: url('../image/loginBG.jpg');
     background-repeat: no-repeat;
     background-position: center center;
+}
+.messages {
+    color: #963b3b;
+    margin-bottom: 16px;
 }

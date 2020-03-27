@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/joinForm.css">
+    <title>Join</title>
+</head>
+
+<body>
+    <div class="join-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                   <form class="join" action="/join" method="POST">
+                        <h1>간편가입</h1>
+                        <input type="text" class="form-control" placeholder="name" name="name"><br><br>
+                        <input type="text" class="form-control" placeholder="username"  name="username"><br><br>
+                        <input type="text" class="form-control" placeholder="password"  name="password"><br><br>
+                       <input class="sendbtn" type="submit">
+                       <section class="messages"><%= message %></section>
+                       <div><a href='/login'>Login</a></div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
