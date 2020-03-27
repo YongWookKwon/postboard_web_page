@@ -13,6 +13,7 @@ h1{
 .login{
     background: #FFF;
     padding: 80px; 
+    border-radius: 15px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
 .login .form-control {
@@ -40,5 +41,7 @@ h1{
 }
 body{
     
-    background: #84be63;
+    background-image: url('../image/loginBG.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
