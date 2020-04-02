@@ -10,6 +10,9 @@
 
 * 2020-03-26 - 디자인 구현 완료, 회원가입 + 메인 페이지에 게시판 구현 준비중
 
+* 2020-03-26(2) - 가입구현 완료
+
+* 2020-04-02 - 게시판구현 완료(약간 미흡, 디자인 부족)
 # USE FRAMEWORK
 
 * node EXPRESS
@@ -45,3 +48,21 @@
 db_name : postboardUser
 db_table(Userinfo) : info
 ```
+
+# WEB DESIGN
+* (/login)
+
+![image](https://user-images.githubusercontent.com/50985723/77752831-a9c08700-706b-11ea-9fbe-ca0079e72f2f.png)
+
+* (/join)
+
+![image](https://user-images.githubusercontent.com/50985723/77752865-b8a73980-706b-11ea-822d-f668f6aec450.png)
+
+
+# 보완사항
+1.게시판의 삭제 수정 버튼을 Ajax로 빼서 POST 요청을 받아온다.
+2.read를 했을 때 조회수가 증감되게 hit 를 증가 시켜준다.
+3.게시판에서만 mysql를 models로 따로 빼서 진행해보았는데, 전체적으로 mysql은 models 부분으로 뺀다.
+4.CRUB 기능의 게시판 디자인
+5.댓글기능/글쓰기툴 기능 추가
+6.마이페이지추가
