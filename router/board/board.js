@@ -26,7 +26,7 @@ router.post('/write', function(req,res,next){
             var sql = "insert into board(name, title, content, regdate, modidate, passwd,hit) values(?,?,?,now(),now(),?,0)";
             conn.query(sql,datas, function (err, rows) {
                 if (err) console.error("err : " + err);
-                res.redirect('/board/list/1');
+                res.redirect('/board/page/1');
             });
 		})
 	}
@@ -65,7 +65,7 @@ router.post('/update',function(req,res,next)
         }
         else
         {      
-            res.send("<script>alert('정상적으로 변경되었습니다..');location.href='/board/list/'</script>")
+            res.send("<script>alert('정상적으로 변경되었습니다..');location.href='/board/page/1'</script>")
             
         }
     });

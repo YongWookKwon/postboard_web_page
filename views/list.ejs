@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="/css/listForm.css">
     <title><%= title %></title>
 </head>
 <body>
 <h1><%= title %></h1>
 <a href="/board/write">글쓰기</a>
 <table border="1">
-    <tr>
+    <tr class="top_menu">
         <td>번호</td>
         <td>작성자</td>
         <td>제목</td>
@@ -26,7 +27,7 @@
         <td><a href="/board/read/<%=data.idx%>"><%=data.title%></a></td>
         <td><%=data.hit%></td>
         <td><%=data.modidate%></td>
-        <td><%=data.regdate%></td><td>
+        <td><%=data.regdate%></td>
     </tr>
     <%}%>
 </table>

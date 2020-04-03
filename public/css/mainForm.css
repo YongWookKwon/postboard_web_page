@@ -1,0 +1,20 @@
+body{
+    
+    background-image: url('../image/loginBG.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: black;
+}
+.mainForm{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+h1{
+    color: white;
+}
