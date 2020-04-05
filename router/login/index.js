@@ -1,22 +1,11 @@
 var express = require('express')
-var app = express()
 var router = express.Router()
-var path = require('path')
-var mysql = require('mysql')
 var passport = require('passport')
 var LocalStrategy = require('passport-local').Strategy
 
 // DATABASE SETTING
-var connection = mysql.createConnection({
-	host : 'localhost',
-	port : 3306,
-	user : 'root',
-	password : 'root',
-	database : 'postboardUser'
-})
-connection.connect()
-
-app.use(express.static('public'))
+var mysql_odbc = require('../../models/db_conn')();
+var connection = mysql_odbc.init();
 
 router.get('/', function(req,res) {
 	var msg;
