@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>    
+    <link rel="stylesheet" href="/css/readForm.css">
     <title><%= title %></title>
 </head>
 <body>
 <h1><%= title %></h1>
  
-<form action="/board/update" method="post">
-    <table border="1">
+<form action="/board/delete" method="post">
+    <table>
         <input type="hidden" name="idx" value="<%=row.idx%>"/>
+        
         <tr>
-            <td>작성자</td>
-            <td><input type="text" name="name" id="name" value="<%=row.name%>" required/></td>
+            <td class="td_n">제목</td>
+            <td><div><%=row.title%><div></td>
         </tr>
         <tr>
-            <td>제목</td>
-            <td><input type="text" name="title" id="title" value="<%=row.title%>" required/></td>
+            <td class="td_n">작성자</td>
+            <td><div><%=row.name%></div></td>
         </tr>
         <tr>
-            <td>내용</td>
-            <td><textarea name="content" id="content" cols="30" rows="10" required><%=row.content%></textarea></td>
+            <td class="td_n">내용</td>
+            <td><pre class="contents"><%=row.content%></pre></td>
         </tr>
         <tr>
-            <td>패스워드</td>
-            <td><input type="password" name="passwd" id="passwd" required/></td>
-        </tr>
-        <tr>
-            <td>변경일</td>
+            <td class="td_n">변경일</td>
             <td><%=row.modidate%></td>
         </tr>
         <tr>
-            <td>등록일</td>
+            <td class="td_n">등록일</td>
             <td><%=row.regdate%></td>
         </tr>
         <tr>
-            <td>조회수</td>
+            <td class="td_n">조회수</td>
             <td><%=row.hit%></td>
+        </tr>
+        
+        <tr>
+            <td class="td_n">패스워드</td>
+            <td><input type="password" name="passwd" id="passwd" required/></td>
         </tr>
         <tr>
             <td colspan="2">
              <!--<button type="submit">글 수정</button>-->
-             <input class="update" type="submit" value="수정">
-             <input class="delete" type="submit" value="삭제">
-                <a href="/board/list/1">목록</a>
+             <a href="/board/update/<%=row.idx%>">수정</a>
+             <a href="/board/page/1">목록</a>
+             <input class="btn" type="submit" value="삭제">
             </td>
         </tr>
     </table>
 </form>
-<script>
-</script>
 </body>
 </html>
