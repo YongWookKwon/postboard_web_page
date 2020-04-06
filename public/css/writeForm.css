@@ -1,0 +1,36 @@
+.td_n{
+    background-color:#c9c9c9 ;
+}
+.name{
+    width: 500px;
+}
+.contents{
+    height: 600px;
+    width: 500px;
+}
+table {
+    border: 1px solid #444444;
+    border-collapse: collapse;
+    border-right:none;
+
+    border-left:none;
+
+    border-top:none;
+
+    border-bottom:none;
+  }
+td {
+    border: 1px solid #444444;
+    padding: 10px;
+  }
+
+.submit{
+    text-decoration: underline;
+    background-color: white;
+    border: none;
+    font-size: medium;
+    color: rebeccapurple;
+}
+.submit:hover{
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="/css/writeForm.css">
     <title><%= title %></title>
 </head>
 <body>
@@ -10,16 +11,16 @@
 <form action="/board/write" method="post">
     <table border="1">
         <tr>
-            <td>제목</td>
-            <td><input type="text" name="title" id="title" required/></td>
+            <td class = "td_n">제목</td>
+            <td><input class="name" type="text" name="title" id="title" required/></td>
         </tr>
         <tr>
-            <td>내용</td>
-            <td><textarea name="content" id="content" cols="30" rows="10" required></textarea></td>
+            <td class = "td_n">내용</td>
+            <td><textarea class="contents" name="content" id="content" cols="30" rows="10" required></textarea></td>
         </tr>
-        <tr>
+        <tr> 
             <td colspan="2">
-                <button type="submit">글쓰기</button>
+                <button class="submit" type="submit">글쓰기</button>
             </td>
         </tr>
     </table>
