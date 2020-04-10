@@ -1,8 +1,11 @@
-body{
-    line-height:2em;        
+body{        
     font-family:"맑은 고딕";
 }
-ul, li{ 
+#mainWrapper{
+    
+    line-height:2em;
+}
+#mainWrapper ul,#mainWrapper li{ 
     list-style:none;
     text-align:center;
     padding:0;
@@ -89,4 +92,47 @@ ul, li{
 .write{
     position: absolute;
     left: 75%;
+}
+
+nav ul {
+    width: 100%;
+    background-color: rgba(44, 42, 39, 0.983);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+.home {
+    background-color:darkgrey;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+}
+
+.home a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 16px 16px;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu:hover:not(.home){
+    background-color: darkgrey;
+    color: white;
+}
+a{
+    text-decoration: none;
 }

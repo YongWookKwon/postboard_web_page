@@ -20,6 +20,7 @@
 
 * 2020-04-05 - 마이페이지 구현 완료
 
+* 2020-04-10 - 네이비게이션바 구현 완료 / 비밀번호 변경 기능 추가
 
 # USE FRAMEWORK
 
@@ -66,8 +67,18 @@ db_table(Userinfo) : info
 
 ![image](https://user-images.githubusercontent.com/50985723/77752865-b8a73980-706b-11ea-822d-f668f6aec450.png)
 
+* (/board/page/1) - 디자인 미구현
+![image](https://user-images.githubusercontent.com/50985723/78552686-e26a1880-7842-11ea-8be1-d2611740563c.png)
+
+* (/myhome) - 디자인 미구현
+![image](https://user-images.githubusercontent.com/50985723/78552737-ff065080-7842-11ea-9941-d8baf942df2c.png)
+
+* (/board/update)
+* (/myhome/update)
+에서 post 형식으로 수정을 한다.
+
 
 # 보완사항
 1. 댓글기능/글쓰기툴 기능 추가
-2. 회원정보 수정기능 추가
+3. 로그인 회원가입을 제외한 main page, 마이 페이지, 게시판 디자인 수정
 

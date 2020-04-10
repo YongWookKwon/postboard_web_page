@@ -15,9 +15,9 @@
                 <div class="col-lg-6 col-lg-offset-3">
                    <form class="join" action="/join" method="POST">
                         <h1>간편가입</h1>
-                        <input type="text" class="form-control" placeholder="name" name="name"><br><br>
-                        <input type="text" class="form-control" placeholder="username"  name="username"><br><br>
-                        <input type="password" class="form-control" placeholder="password"  name="password"><br><br>
+                        <input type="text" class="form-control" placeholder="name" name="name" required><br><br>
+                        <input type="text" class="form-control" placeholder="username"  name="username" required><br><br>
+                        <input type="password" class="form-control" placeholder="password"  name="password" required><br><br>
                        <input class="sendbtn" type="submit">
                        <section class="messages"><%= message %></section>
                        <div><a href='/login'>Login</a></div>

@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/myhome.css">
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li class="home"><a href="/main">Home</a></li>
+            <li class="dropdown">
+                <a href="/board/page/1"><div class="dropdown-menu">게시판</div></a>
+            </li>
+            <li class="dropdown">
+                <a href="/myhome"><div class="dropdown-menu">마이페이지</div></a>
+            </li>
+        </ul>
+    </nav>
     <h1>마이페이지</h1>
     <div>이름 : <%=name%></div>
     <div>아이디 : <%=ID%></div>

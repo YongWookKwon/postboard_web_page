@@ -25,7 +25,8 @@ router.post('/update', function(req,res){
         var pw = req.body.PW;
         query = `update info set pw = '${pw}' where insertId = ${id} and pw = '${defaultPw}' `
         connection.query(query, function(err,rows){
-            if(rows.affectedRwos ==0){
+            console.log("password change result 0:error, 1:change : " +rows.affectedRows)
+            if(rows.affectedRows ===0){
                 res.send("<script>alert('패스워드가 일치하지 않습니다.');history.back();</script>");
             }else{
                 res.send("<script>alert('정상적으로 변경되었습니다..');location.href='/'</script>")
