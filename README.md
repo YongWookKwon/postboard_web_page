@@ -1,6 +1,8 @@
 # POSTBOARD WEB PAGE DEVELOPE 
 
-> begin 2020-03-21 ~
+> begin 2020-03-21 ~ 2020 - 04 -12 (기능적인 부분은 마무리되서 임시 마무리)
+
+> 추후에 댓글기능 덧글기능 추가 보안성 
 
 * 2020-03-23 - 기본적은 틀 생성
 
@@ -59,6 +61,12 @@ db_table(Userinfo) : info
 ```
 
 # WEB DESIGN
+
+* nav bar
+![image](https://user-images.githubusercontent.com/50985723/79060896-3bafcd00-7cc5-11ea-8646-b68701c63150.png)
+
+
+
 * (/login)
 
 ![image](https://user-images.githubusercontent.com/50985723/77752831-a9c08700-706b-11ea-9fbe-ca0079e72f2f.png)
@@ -68,10 +76,12 @@ db_table(Userinfo) : info
 ![image](https://user-images.githubusercontent.com/50985723/77752865-b8a73980-706b-11ea-822d-f668f6aec450.png)
 
 * (/board/page/1) - 디자인 미구현
-![image](https://user-images.githubusercontent.com/50985723/78552686-e26a1880-7842-11ea-8be1-d2611740563c.png)
+![image](https://user-images.githubusercontent.com/50985723/79060914-61d56d00-7cc5-11ea-9040-f02d53d54c3e.png)
+
 
 * (/myhome) - 디자인 미구현
-![image](https://user-images.githubusercontent.com/50985723/78552737-ff065080-7842-11ea-9941-d8baf942df2c.png)
+![image](https://user-images.githubusercontent.com/50985723/79060924-7ca7e180-7cc5-11ea-80c9-b7d37fc9bf67.png)
+
 
 * (/board/update)
 * (/myhome/update)
